@@ -241,11 +241,13 @@ img {
 .advantages-list {
   display: flex;
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 
+.advantages-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .advantages-list-item {
   width: 270px;
 }
@@ -255,20 +257,22 @@ img {
 
 /* ----- SERVICES ----- */
 
-.servises .title {
+.services .title {
   margin-bottom: 50px;
 }
 
-.servises .list {
+.services .list {
   display: flex;
   align-items: center;
-  padding-bottom: 94px;
 }
 
-.servises .list-item:not(:last-child) {
+.services .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.services-container {
+  padding-bottom: 94px;
+}
 /* ----- SPECIALISTS ----- */
 
 .team {
@@ -298,18 +302,21 @@ img {
 }
 
 .team .title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team .list {
   display: flex;
   align-items: center;
-  padding-bottom: 94px;
 }
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ======= PORTFOLIO ======= */
@@ -331,9 +338,12 @@ img {
 .button {
   background-color: #f5f4fa;
   cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
 }
 
-.project-list-item-title {
+.project-work-list-item-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -341,8 +351,48 @@ img {
   letter-spacing: 0.06em;
 }
 
-.project-list-item-description {
+.project-work-list-item-description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.projects-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.projects-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.projects-list {
+  margin-bottom: 50px;
+}
+
+.project-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project-work-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 -30px);
+}
+
+.card-content {
+  padding: 20px 24px 16px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.project-work-list-item-title {
+  margin-bottom: 4px;
 }
