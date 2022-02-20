@@ -60,6 +60,21 @@ img {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 /* ===== COMMON STYLES ===== */
 
 /* ----- LOGO & NAVIGATION ----- */
@@ -116,8 +131,6 @@ img {
 .nav-list .list {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .list-item:not(:last-child) {
@@ -125,6 +138,7 @@ img {
 }
 
 .nav-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -157,6 +171,8 @@ img {
 
 .footer {
   background-color: var(--secondary-font-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-accent-footer {
@@ -168,19 +184,14 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-top: 20px;
 }
 .address-list-location {
   color: #ffffff;
 }
 
-.footer-container {
-  padding-top: 60px;
-}
-
 .address-list-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 /* ======= STUDIO ======= */
@@ -189,6 +200,8 @@ img {
 .hero {
   background-color: var(--secondary-text-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -216,10 +229,6 @@ img {
   min-width: 200px;
 }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 /* ----- ADVANTAGES ----- */
 
 .advantages-list-title {
@@ -241,13 +250,8 @@ img {
 .advantages-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.advantages-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .advantages-list-item {
   width: 270px;
 }
@@ -270,8 +274,8 @@ img {
   margin-right: 30px;
 }
 
-.services-container {
-  padding-bottom: 94px;
+.services.section {
+  padding-top: 0;
 }
 /* ----- SPECIALISTS ----- */
 
@@ -289,8 +293,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-specialist-description {
@@ -298,7 +301,6 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 
 .team .title {
@@ -314,9 +316,9 @@ img {
   margin-right: 30px;
 }
 
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ======= PORTFOLIO ======= */
@@ -337,6 +339,11 @@ img {
 
 .button {
   background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
   border-color: transparent;
@@ -366,10 +373,6 @@ img {
   margin-right: 8px;
 }
 
-.projects-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .projects-list {
   margin-bottom: 50px;
 }
@@ -388,7 +391,7 @@ img {
 }
 
 .card-content {
-  padding: 20px 24px 16px 24px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
